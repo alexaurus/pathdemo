@@ -1,0 +1,10 @@
+C:\Users\anelc\Desktop\path\pathdemo\obj\Release\netcoreapp3.1\PubTmp\Out\pathdemo.exe
+C:\Users\anelc\Desktop\path\pathdemo\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+C:\Users\anelc\Desktop\path\pathdemo\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+C:\Users\anelc\Desktop\path\pathdemo\obj\Release\netcoreapp3.1\PubTmp\Out\pathdemo.dll
+C:\Users\anelc\Desktop\path\pathdemo\obj\Release\netcoreapp3.1\PubTmp\Out\pathdemo.deps.json
+C:\Users\anelc\Desktop\path\pathdemo\obj\Release\netcoreapp3.1\PubTmp\Out\pathdemo.runtimeconfig.json
+C:\Users\anelc\Desktop\path\pathdemo\obj\Release\netcoreapp3.1\PubTmp\Out\pathdemo.pdb
+C:\Users\anelc\Desktop\path\pathdemo\obj\Release\netcoreapp3.1\PubTmp\Out\DotNetZip.dll
+C:\Users\anelc\Desktop\path\pathdemo\obj\Release\netcoreapp3.1\PubTmp\Out\System.Text.Encoding.CodePages.dll
+C:\Users\anelc\Desktop\path\pathdemo\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
