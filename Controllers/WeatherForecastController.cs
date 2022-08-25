@@ -18,10 +18,16 @@ namespace pathdemo.Controllers
     {
         
         [HttpGet]
-        public void Get()
+        public ActionResult<FileDTO> Get()
         {
+
+            string outputname = "Zip" + DateTime.Now.ToFileTime().ToString() + ".zip";
             GenerateFiles();
-            CreateZip();
+            CreateZip(outputname);
+
+            var fi =  GetFile(outputname);
+
+            return File(fi.Data, fi.FileType, fi.FileName);
 
         }
 
@@ -48,9 +54,19 @@ namespace pathdemo.Controllers
             }
         }
 
-        public void CreateZip()
+        public void CreateZip(string outputname)
         {
-            ZipFile.CreateFromDirectory(Path.Combine(Path.GetTempPath() + "Result"), Path.Combine(Path.GetTempPath() + "ZipResult.zip"));
+            ZipFile.CreateFromDirectory(Path.Combine(Path.GetTempPath() + "Result"), Path.Combine(Path.GetTempPath() + outputname));
+        }
+
+        public FileDTO GetFile(string outputname)
+        {
+            return new FileDTO
+            {
+                FileName = "ZipReturned.zip",
+                Data = System.IO.File.ReadAllBytes(Path.Combine(Path.GetTempPath() + outputname)),
+                FileType = "application/zip"
+            };
         }
     }
 }
